@@ -1,3 +1,5 @@
+## Basic Terraform Commands
+
 ## Terraform Initialization 
 ```
 terraform init 
