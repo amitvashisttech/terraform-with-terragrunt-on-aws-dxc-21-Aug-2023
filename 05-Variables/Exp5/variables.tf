@@ -19,7 +19,7 @@ variable "ec2_instance_type" {
 variable "ec2_instance_count" {
   description = "Variable for EC2 Instance Count"
   # default     = 2
-  type        = number
+  type = number
 }
 
 variable "ec2_instance_name" {
@@ -29,6 +29,6 @@ variable "ec2_instance_name" {
 }
 
 
-variable "my_var" { 
-    default = "test1"
+variable "my_var" {
+  default = "test1"
 }

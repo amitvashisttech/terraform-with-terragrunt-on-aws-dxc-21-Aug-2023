@@ -29,6 +29,6 @@ variable "ec2_instance_name" {
 }
 
 
-variable "my_var" { 
-    default = "test1"
+variable "my_var" {
+  default = "test1"
 }

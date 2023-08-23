@@ -1,5 +1,5 @@
 provider "aws" {
-    region = "us-east-2"
+  region = "us-east-2"
 }
 
 
@@ -12,7 +12,7 @@ resource "aws_instance" "web" {
   # Ubuntu Linux 22.04 Image ID
   ami           = "ami-024e6efaf93d85776"
   instance_type = "t2.micro"
-  
+
 
   tags = {
     Name = "HelloWorld"
