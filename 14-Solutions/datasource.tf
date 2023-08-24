@@ -1,6 +1,6 @@
 data "aws_ami" "myami_east" {
-  most_recent      = true
-  owners           = ["amazon"]
+  most_recent = true
+  owners      = ["amazon"]
 
   filter {
     name   = "name"
@@ -9,9 +9,9 @@ data "aws_ami" "myami_east" {
 }
 
 data "aws_ami" "myami_west" {
-  provider  = aws.myprovider2
-  most_recent      = true
-  owners           = ["amazon"]
+  provider    = aws.myprovider2
+  most_recent = true
+  owners      = ["amazon"]
 
   filter {
     name   = "name"
@@ -25,5 +25,5 @@ data "aws_availability_zones" "zone_east" {
 
 data "aws_availability_zones" "zone_west" {
   provider = aws.myprovider2
-  state = "available"
+  state    = "available"
 }
