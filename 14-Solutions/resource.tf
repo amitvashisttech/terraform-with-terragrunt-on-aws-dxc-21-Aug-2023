@@ -37,7 +37,7 @@ resource "aws_instance" "back_east" {
 
   // Lifecycle to prevent destroy by mistake
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
 
   tags = {
@@ -93,7 +93,7 @@ resource "aws_instance" "back_west" {
 
   // Lifecycle to prevent destroy by mistake
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
 
   tags = {
